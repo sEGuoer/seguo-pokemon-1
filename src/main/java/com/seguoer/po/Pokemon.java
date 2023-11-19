@@ -1,5 +1,14 @@
 package com.seguoer.po;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 public class Pokemon {
     //宝可梦名字
     private String name;
