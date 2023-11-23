@@ -3,6 +3,7 @@ package com.seguoer.pokemonHatch.Service.impl;
 import com.seguoer.po.IndividualValues;
 import com.seguoer.po.IndividualValuesAndSpeciesStrength;
 import com.seguoer.po.Pokemon;
+import com.seguoer.po.SpeciesStrength;
 import com.seguoer.pokemonHatch.Service.HatchEgg;
 import com.seguoer.pokemonHatch.Service.PokemonHatchService;
 
@@ -22,6 +23,8 @@ public class SimplePMHatch implements PokemonHatchService {
         sonPM.setType(femaleParent.getType());
 
         sonPM.setEggGroup(femaleParent.getEggGroup());
+
+        sonPM.setSpeciesStrength(new SpeciesStrength(0,0,0,0,0,0));
 
         sonPM.setNotShiny(probability(1, 1048));
 
